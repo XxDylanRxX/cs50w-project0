@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  background: #c0c0c0;
+  background: #a9a9a9;
   height: 80px;
   width: 100%;
 }
@@ -44,7 +44,8 @@ nav ul li a {
 }
 
 a.active, a:hover {
-  background: #3007AB;
+  background: black;
+  color: white;
   transition: 0.5s;
 }
 
@@ -63,11 +64,19 @@ a.active, a:hover {
 }
 
 header {
+  color: white;
   background: url(Captura.PNG);
   background-size: cover;
   background-attachment: fixed;
   height: 590px;
-  background: rgba(5, 7, 12, 0.4);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 50px;
 }
 
 @media (max-width: 952px) {
@@ -103,7 +112,7 @@ header {
   }
   a:hover, a.active {
     background: none;
-    color: #3007AB;
+    color: white;
   }
   #check:checked ~ ul {
     left: 0;
