@@ -11,15 +11,15 @@ body {
 }
 
 nav {
-  background: #067B83;
+  background: #c0c0c0;
   height: 80px;
   width: 100%;
 }
 
-label .logo {
-  color: white;
+label.logo {
+  color: black;
   font-size: 35px;
-  line-height: 80px;
+  line-height: 70px;
   padding: 0 100px;
   font-weight: bold;
 }
@@ -36,7 +36,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: black;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -60,6 +60,14 @@ a.active, a:hover {
 
 #check {
   display: none;
+}
+
+header {
+  background: url(Captura.PNG);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 590px;
+  background: rgba(5, 7, 12, 0.4);
 }
 
 @media (max-width: 952px) {
