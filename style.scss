@@ -1,4 +1,8 @@
 $color1 : #3007AB;
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
+
+$color_principal :#E15927;
+
 
 
 *{
@@ -11,17 +15,19 @@ $color1 : #3007AB;
 
 body{
     font-family: 'Times New Roman', Times, serif;
+    background: #ffffaa;
 
 }
 nav{
-    background: #a9a9a9;
+    background: $color_principal;
     height: 80px;
     width: 100%;
 }
 
 label{
     .logo{
-        color: black;
+        font-family: 'Hind', sans-serif;
+        color: white;
         font-size: 35px;
         line-height: 70px;
         padding: 0 100px;
@@ -52,11 +58,13 @@ nav{
     ul{
         li{
             a{
-                color:black;
+                color:white;
                 font-size: 17px;
+                font-family: 'Hind', sans-serif;
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-transform: uppercase;
+                text-decoration: none;
 
             }
         }
@@ -65,7 +73,7 @@ nav{
 
 a.active, a:hover{
     background: black;
-    color: white;
+    color:$color_principal;
     transition: 0.5s;
 }
 
@@ -83,20 +91,6 @@ a.active, a:hover{
     display: none;
 }
 
-header{
-    color: white;
-    background: url(Captura.PNG);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 590px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-h1{
-    margin: 0 auto;
-    font-size: 50px;
-}
 
 
 @media (max-width: 952px){
@@ -156,7 +150,7 @@ h1{
 
     a:hover, a.active{
         background: none ;
-        color: white ;
+        color:$color_principal ;
     }
 
     #check:checked ~ ul{
