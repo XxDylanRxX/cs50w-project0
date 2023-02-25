@@ -1,41 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Hind&display=swap');
 
+html{
+    font-size: 16px;
+
+    @media screen and (max-width: 540px){
+        font-size: 12px;
+    }
+    
+}
+
 h1{
     font-family: 'Gloock', serif;
-    margin: 60px 60px 60px ;
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 40px;
+    
+}
+
+
+
+section{
+    padding-top:60px ;
+    float: left;
+    width: 60%;
     padding-top: 60px;
+    min-height: 500px;
+    margin: 30px 60px 10px 60px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+
 }
 
 #titulos{
-    font-family:'Karla', sans-serif;;
+    font-family:'Karla', sans-serif;
+    font-size: 1rem;
 
 }
 
 .clear{
+    display: fixed;
     clear: both;
 }
 
-#contenido{
-    float: left;
-    width: calc(80% - 80px);
-    min-height: 500px;
-    margin: 30px 60px 10px 60px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-}
-aside{
-    p{
-        margin: 20px;
 
-    }
+aside{
+    border-color: #E15927;
+    padding-top: 200px;
+    float: right;
+    width: 20%;
+
     h3{
+        font-size: 2rem;;
+        text-align: center;
         color: #E15927;
     }
+
+    ol{
+        list-style-type: circle ;
+    }
+    ol{
+        li{
+            margin-top: 20px ;
+           
+        }
+    }
+
     ol{
         li {
             a{
                 color: black;
                 font-style: none;
+                font-size: 1.2rem;
+                font-family:'Karla', sans-serif;
+                  
             }
             :hover{
                 color:white;
@@ -47,4 +84,22 @@ aside{
     } 
 }
 
+.caja1
+{
+    width: 75vw;
+    max-width: 500px;
+    min-width: 290px;
+    margin: auto;
+}
 
+img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(15,15,15,.5)
+}
+
+@media screen and (max-width: 540px){
+    aside{
+        display: none;
+    }
+}
