@@ -20,8 +20,9 @@ nav {
   position: fixed;
 }
 
-label.logo {
+.logo {
   font-family: "Hind", sans-serif;
+  text-decoration: none;
   color: white;
   font-size: 35px;
   line-height: 70px;
@@ -50,7 +51,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-a.active, a:hover {
+ol li a:hover, ul li a:hover {
   background: black;
   color: #E15927;
   transition: 0.5s;
@@ -71,7 +72,7 @@ a.active, a:hover {
 }
 
 @media (max-width: 952px) {
-  label.logo {
+  .logo {
     font-size: 30px;
     padding-left: 50px;
   }
@@ -79,7 +80,7 @@ a.active, a:hover {
     font-size: 16px;
   }
 }
-@media (max-width: 858px) {
+@media (max-width: 880px) {
   .checkbtn {
     display: block;
   }
@@ -101,7 +102,7 @@ a.active, a:hover {
   nav ul li a {
     font-size: 20px;
   }
-  a:hover, a.active {
+  nav ul li :hover {
     background: none;
     color: #E15927;
   }
@@ -145,6 +146,14 @@ section {
   display: fixed;
   clear: both;
 }
+.clear .h3 {
+  font-size: 2rem;
+  color: #E15927;
+}
+.clear a:hover {
+  font-size: 1.2rem;
+  color: #E15927 !important;
+}
 
 aside {
   border-color: #E15927;
@@ -168,10 +177,6 @@ aside ol li a {
   font-style: none;
   font-size: 1.2rem;
   font-family: "Karla", sans-serif;
-}
-aside ol li :hover {
-  color: white;
-  background: #E15927;
 }
 
 .caja1 {

@@ -27,17 +27,17 @@ nav{
     position: fixed;
 }
 
-label{
-    .logo{
-        font-family: 'Hind', sans-serif;
-        color: white;
-        font-size: 35px;
-        line-height: 70px;
-        padding: 0 100px;
-        font-weight: bold;
-      }
 
-}
+.logo{
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+
 
   
 nav{
@@ -74,11 +74,16 @@ nav{
     }
 }
 
-a.active, a:hover{
-    background: black;
-    color:$color_principal;
-    transition: 0.5s;
-}
+ ol, ul{
+    li{
+        a:hover{
+            background: black;
+            color:$color_principal;
+            transition: 0.5s;
+        }
+    }
+ }
+ 
 
 .checkbtn{
     font-size:30px ;
@@ -97,7 +102,7 @@ a.active, a:hover{
 
 
 @media (max-width: 952px){
-    label.logo{
+    .logo{
         font-size: 30px ;
         padding-left: 50px ;
     }
@@ -113,7 +118,7 @@ a.active, a:hover{
 
 }
 
-@media (max-width: 858px){
+@media (max-width: 880px){
     .checkbtn{
         display: block;
     }
@@ -147,15 +152,16 @@ a.active, a:hover{
                 a{
                     font-size: 20px;
                 }
+                :hover{
+                    background: none ;
+                    color:$color_principal ;
+                }
+            
             }
         }
     }
 
-    a:hover, a.active{
-        background: none ;
-        color:$color_principal ;
-    }
-
+    
     #check:checked ~ ul{
         left: 0;
 
@@ -204,11 +210,20 @@ section{
 .clear{
     display: fixed;
     clear: both;
+    .h3{
+        font-size: 2rem;
+        color: $color_principal;
+    }
+    a:hover{
+        font-size: 1.2rem;
+        color: $color_principal !important;
+    }
+
 }
 
 
 aside{
-    border-color: #E15927;
+    border-color: $color_principal;
     padding-top: 200px;
     float: right;
     width: 20%;
@@ -216,7 +231,7 @@ aside{
     h3{
         font-size: 2rem;;
         text-align: center;
-        color: #E15927;
+        color: $color_principal;
     }
 
     ol{
@@ -237,11 +252,6 @@ aside{
                 font-size: 1.2rem;
                 font-family:'Karla', sans-serif;
                   
-            }
-            :hover{
-                color:white;
-                background: #E15927 ;
-
             }
         }
 
@@ -267,3 +277,4 @@ img{
         display: none;
     }
 }
+
