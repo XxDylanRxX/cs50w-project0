@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Hind&display=swap');
+$color_principal :#1ab688;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #ffffaa;
+}
+
+nav {
+    margin: 0;
+    background: $color_principal;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav {
+    ul {
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+nav {
+    ul {
+        li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+    }
+}
+
+nav {
+    ul {
+        li {
+            a {
+                color: white;
+                font-size: 17px;
+                font-family: 'Hind', sans-serif;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+ol,
+ul {
+    li {
+        a:hover {
+            background: black;
+            color: $color_principal;
+            transition: 0.5s;
+        }
+    }
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav {
+        ul {
+            li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+        }
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 20px;
+                }
+                 :hover {
+                    background: none;
+                    color: $color_principal;
+                }
+            }
+        }
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+html {
+    font-size: 16px;
+    @media screen and (max-width: 540px) {
+        font-size: 12px;
+    }
+}
+
+h1 {
+    font-family: 'Gloock', serif;
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 40px;
+}
+
+section {
+    padding-top: 60px;
+    float: left;
+    width: 60%;
+    padding-top: 60px;
+    min-height: 500px;
+    margin: 30px 60px 10px 60px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+
+#titulos {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}
+
+.clear {
+    display: fixed;
+    clear: both;
+    .h3 {
+        font-size: 2rem;
+        color: $color_principal;
+    }
+    a:hover {
+        font-size: 1.2rem;
+        color: $color_principal !important;
+    }
+}
+
+aside {
+    border-color: $color_principal;
+    padding-top: 200px;
+    float: right;
+    width: 20%;
+    h3 {
+        font-size: 2rem;
+        ;
+        text-align: center;
+        color: $color_principal;
+    }
+    ol {
+        list-style-type: circle;
+    }
+    ol {
+        li {
+            margin-top: 20px;
+        }
+    }
+    ol {
+        li {
+            a {
+                color: black;
+                font-style: none;
+                font-size: 1.2rem;
+                font-family: 'Karla', sans-serif;
+            }
+        }
+    }
+}
+
+.caja1 {
+    width: 75vw;
+    max-width: 500px;
+    min-width: 290px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(15, 15, 15, 0.75)
+}
+
+@media screen and (max-width: 540px) {
+    aside {
+        display: none;
+    }
+}
