@@ -51,7 +51,8 @@ nav ul li a {
   text-decoration: none;
 }
 
-ol li a:hover, ul li a:hover {
+ol li a:hover,
+ul li a:hover {
   background: black;
   color: #E15927;
   transition: 0.5s;
