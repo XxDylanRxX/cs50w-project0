@@ -154,47 +154,4 @@ section {
 .clear a:hover {
   font-size: 1.2rem;
   color: #1ab688 !important;
-}
-
-aside {
-  border-color: #1ab688;
-  padding-top: 200px;
-  float: right;
-  width: 20%;
-}
-aside h3 {
-  font-size: 2rem;
-  text-align: center;
-  color: #1ab688;
-}
-aside ol {
-  list-style-type: circle;
-}
-aside ol li {
-  margin-top: 20px;
-}
-aside ol li a {
-  color: black;
-  font-style: none;
-  font-size: 1.2rem;
-  font-family: "Karla", sans-serif;
-}
-
-.caja1 {
-  width: 75vw;
-  max-width: 500px;
-  min-width: 290px;
-  margin: auto;
-}
-
-img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: rgba(15, 15, 15, 0.75);
-}
-
-@media screen and (max-width: 600px) {
-  aside {
-    display: none;
-  }
 }/*# sourceMappingURL=style4.css.map */
