@@ -8,6 +8,9 @@ $color_principal :#E15927;
     text-decoration: none;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -162,7 +165,7 @@ h1 {
 }
 
 section {
-    padding-top: 60px;
+    margin-top: 200px;
     float: left;
     width: 60%;
     padding-top: 60px;
@@ -234,8 +237,11 @@ img {
     box-shadow: rgba(15, 15, 15, 0.75);
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 610px) {
     aside {
         display: none;
     }
+}
+article h2[id]{
+    scroll-margin-top: 80px;
 }

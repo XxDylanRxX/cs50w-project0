@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
   background: #ffffaa;
@@ -214,4 +218,8 @@ ol {
 
 ol li {
   margin-top: 20px;
+}
+
+.slider-wrapper img[id] {
+  scroll-margin-top: 200px;
 }/*# sourceMappingURL=style4.css.map */
