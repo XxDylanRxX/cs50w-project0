@@ -11,6 +11,7 @@ $color_principal :#1ab688;
 body {
     font-family: 'Times New Roman', Times, serif;
     background: #ffffaa;
+    
 }
 
 nav {
@@ -19,6 +20,7 @@ nav {
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -118,6 +120,7 @@ ul {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 2;
     }
     nav {
         ul {
@@ -171,7 +174,8 @@ section {
     font-size: 1rem;
 }
 
-#titulos {
+h2{
+    padding-top: 20px ;
     font-family: 'Karla', sans-serif;
     font-size: 1rem;
 }
@@ -186,5 +190,66 @@ section {
     a:hover {
         font-size: 1.2rem;
         color: $color_principal !important;
+    }
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x:hidden ;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 .25rem .5 rem black;
+    border-radius: .5rem;
+    img{
+        width: 100%;
+        flex: 1 0 100%;
+        scroll-snap-align:start ;
+        object-fit: cover;
+
+    }
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25 rem;
+    left: 50%;
+    transform: translate(-50%);
+    a{
+        width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        background-color: black;
+        opacity: .75;
+        transition: opacity ease 250ms;
+    }
+    :hover{
+        opacity: 100%;
+    }
+
+
+}
+@media (max-width: 880px) {
+    .slider-nav a {
+        z-index: 1;
+    }
+
+}
+
+ol{
+    list-style-type: circle ;
+}
+ol{
+    li{
+        margin-top: 20px ;
+       
     }
 }
