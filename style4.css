@@ -77,16 +77,16 @@ ul li a:hover {
   display: none;
 }
 
-@media (max-width: 952px) {
+@media (max-width: 1090px) {
   .logo {
     font-size: 20px;
-    padding-left: 50px;
+    padding-left: 30px;
   }
   nav ul li a {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 895px) {
   .checkbtn {
     display: block;
   }
@@ -171,7 +171,7 @@ h2 {
 
 .slider {
   display: flex;
-  aspect-ratio: 16/9;
+  aspect-ratio: 15/9;
   overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -194,6 +194,8 @@ h2 {
   bottom: 1.25 rem;
   left: 50%;
   transform: translate(-50%);
+  scroll-margin-top: 100px;
+  scroll-padding-top: 100px;
 }
 .slider-nav a {
   width: 0.5rem;
@@ -202,6 +204,8 @@ h2 {
   background-color: black;
   opacity: 0.75;
   transition: opacity ease 250ms;
+  scroll-margin-top: 100px;
+  scroll-padding-top: 100px;
 }
 .slider-nav :hover {
   opacity: 100%;
@@ -218,8 +222,4 @@ ol {
 
 ol li {
   margin-top: 20px;
-}
-
-.slider-wrapper img[id] {
-  scroll-margin-top: 200px;
 }/*# sourceMappingURL=style4.css.map */

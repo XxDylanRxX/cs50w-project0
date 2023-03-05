@@ -104,10 +104,10 @@ nav{
 
 
 
-@media (max-width: 952px){
+@media (max-width: 1090px){
     .logo{
         font-size: 20px;
-        padding-left: 50px ;
+        padding-left: 35px ;
     }
     nav{
         ul{
@@ -121,7 +121,7 @@ nav{
 
 }
 
-@media (max-width: 880px){
+@media (max-width: 890px){
     .checkbtn{
         display: block;
     }
@@ -176,7 +176,7 @@ nav{
 html{
     font-size: 16px;
 
-    @media screen and (max-width: 540px){
+    @media screen and (max-width: 600px){
         font-size: 12px;
     }
     

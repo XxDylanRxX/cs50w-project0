@@ -93,10 +93,10 @@ ul {
     display: none;
 }
 
-@media (max-width: 952px) {
+@media (max-width: 1090px) {
     .logo {
         font-size: 20px;
-        padding-left: 50px;
+        padding-left: 35px;
     }
     nav {
         ul {
@@ -109,7 +109,7 @@ ul {
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 890px) {
     .checkbtn {
         display: block;
     }
