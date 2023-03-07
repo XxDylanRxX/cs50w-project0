@@ -1,6 +1,12 @@
 $color1: #3007AB;
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Hind&display=swap');
+
+%heading{
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+
+}
 $color_principal :#E15927;
 * {
     padding: 0;
@@ -26,8 +32,7 @@ nav {
 }
 
 .logo {
-    font-family: 'Hind', sans-serif;
-    text-decoration: none;
+    @extend %heading;
     color: white;
     font-size: 35px;
     line-height: 70px;
@@ -56,13 +61,13 @@ nav {
     ul {
         li {
             a {
+                @extend %heading;
                 color: white;
                 font-size: 17px;
-                font-family: 'Hind', sans-serif;
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-transform: uppercase;
-                text-decoration: none;
+                
             }
         }
     }

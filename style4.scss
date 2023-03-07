@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Hind&display=swap');
+
+%heading{
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+
+}
 $color_principal :#1ab688;
 * {
     padding: 0;
@@ -26,13 +32,13 @@ nav {
 }
 
 .logo {
-    font-family: 'Hind', sans-serif;
-    text-decoration: none;
+    @extend %heading;
     color: white;
     font-size: 35px;
     line-height: 70px;
     padding: 0 100px;
     font-weight: bold;
+    
 }
 
 nav {
@@ -58,11 +64,11 @@ nav {
             a {
                 color: white;
                 font-size: 17px;
-                font-family: 'Hind', sans-serif;
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-transform: uppercase;
-                text-decoration: none;
+                @extend %heading;
+                
             }
         }
     }
@@ -195,64 +201,6 @@ h2{
     }
 }
 
-.slider-wrapper{
-    position: relative;
-    max-width: 500px;
-    margin: 0 auto;
-    
-}
-
-.slider{
-    display: flex;
-    aspect-ratio: 15/9;
-    overflow-x:hidden ;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    box-shadow: 0 .25rem .5 rem black;
-    border-radius: .5rem;
-
-    img{
-        width: 100%;
-        flex: 1 0 100%;
-        scroll-snap-align:start ;
-        object-fit: cover;
-        
-
-    }
-}
-
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25 rem;
-    left: 50%;
-    transform: translate(-50%);
-    scroll-margin-top: 100px;
-    scroll-padding-top: 100px;
-
-    a{
-        width: .5rem;
-        height: .5rem;
-        border-radius: 50%;
-        background-color: black;
-        opacity: .75;
-        transition: opacity ease 250ms;
-        scroll-margin-top: 100px;
-        scroll-padding-top: 100px;
-    }
-    :hover{
-        opacity: 100%;
-    }
-
-
-}
-@media (max-width: 880px) {
-    .slider-nav a {
-        z-index: 1;
-    }
-
-}
 
 ol{
     list-style-type: circle ;
@@ -262,9 +210,4 @@ ol{
         margin-top: 20px ;
        
     }
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  color: red !important;
 }
