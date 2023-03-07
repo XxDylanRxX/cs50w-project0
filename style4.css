@@ -222,4 +222,9 @@ ol {
 
 ol li {
   margin-top: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: red !important;
 }/*# sourceMappingURL=style4.css.map */
