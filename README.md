@@ -1,3 +1,4 @@
-# Project 0
-
-Web Programming with Python and JavaScript
+# ElectroBlogDR.
+#### ElectroBlogDR es, valga la redundancia, un blog donde se presenta información escencial y detallada acerca de uno de los componentes más importantes dentro del campo de la electrónica.
+#### la información que presentado la he repartido en distintos apartados en donde se habla de una manera más especifica de cada tema. Dichos apartados, se pueden seleccionar dentro del nabvar,que permite acceder de manera libre de un apartado a otro sin problemas.
+#### Toda el blog fue creado con una estructura html semántica con etiquetas propias de HTML5. Además, es importante recalcar que cada uno de los contenidos, imagnes y elementos del blog es adaptable a los diferentes dispositivos mobiles, en otras palabras, posee caracteristicas responsivas.
